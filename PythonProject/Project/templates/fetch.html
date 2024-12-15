@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch</title>
+</head>
+<body>
+    <h1>Fetch</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.id_number.label }} {{ form.id_number(size=20) }}<br>
+        {{ form.submit() }}
+    </form>
+    <a href="/">Home</a>
+</body>
+</html>

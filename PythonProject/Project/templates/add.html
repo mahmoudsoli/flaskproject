@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patients Form</title>
+</head>
+<body>
+    <h1>Add</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.username.label }} {{ form.username(size=20) }}<br>
+        {{ form.email.label }} {{ form.email(size=20) }}<br>
+        {{ form.password.label }} {{ form.password(size=20) }}<br>
+        {{ form.retype.label }} {{ form.retype(size=20) }}<br>
+        {{ form.First_name.label }} {{ form.First_name(size=20) }}<br>
+        {{ form.Last_name.label }} {{ form.Last_name(size=20) }}<br>
+        {{ form.id_number.label }} {{ form.id_number(size=20) }}<br>
+        {{ form.date_of_birth.label }} {{ form.date_of_birth(size=20) }}<br>
+        {{ form.submit() }}
+    </form>
+    <a href="/">Home</a>
+</body>
+</html>
